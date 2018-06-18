@@ -57,7 +57,7 @@ while(running == True):      #creates loop that runs program (necessary because 
                         n_move = 1          
                         break
             if(n_move == 0):
-                k_cor[0],k_cor[1] = k_cor[0] + moves[move[i]][0], k_cor[1] + moves[move[i]][1]
+                k_cor[0],k_cor[1] = k_cor[0] + pos[move[i]][0], k_cor[1] + pos[move[i]][1]
                 last_c.append([k_cor[0],k_cor[1]])
                 for i in range(len(board)):
                     if(board[i] == [k_cor[0],k_cor[1]]):
