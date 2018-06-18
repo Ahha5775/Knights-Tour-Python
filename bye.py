@@ -22,7 +22,7 @@ while(running == True):      #creates loop that runs program (necessary because 
     while(re == 1):
         re = 0
         for i in range(len(move)):
-            while(not [k_cor[0] + moves[move[i]][0], k_cor[1] + moves[move[i]][1]] in board):     #checks if points + move is not in board if so, increases move value by one, checks if no moves
+            while(not [k_cor[0] + pos[move[i]][0], k_cor[1] + pos[move[i]][1]] in board):     #checks if points + move is not in board if so, increases move value by one, checks if no moves
                 move[i] += 1
                 re = 1
                 if(move[i] > 7):
