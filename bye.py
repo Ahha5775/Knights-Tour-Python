@@ -2,10 +2,10 @@ pos = [[1,2],[1,-2],[-1,2],[-1,-2],[2,1],[-2,1],[2,-1],[-2,-1]]
 k_cor = []
 k_cor.append(input("What is the starting column for your piece? (letters A-H)").upper())
 k_cor.append(int(input("What is the starting row for your piece? (letters 1-8)")))      #gets the starting coordinate values of  the knight in [letter,number] notation
-moves = []
+move = []
 board = []
 for i in range(64):
-    moves.append(0)
+    move.append(0)
 for i in range(8):
     for x in range(8):
         board.append([i,x])
